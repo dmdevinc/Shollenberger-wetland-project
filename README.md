@@ -1,6 +1,6 @@
 # Wetland Hydrology - Work in Progress
 
-Wetlands are hydrologically and ecologically important habitats, supporting a diverse array of plants and wildlife as well as providing ecosystem services such as flood control and improving water quality. I regularly go birding in Shollenberger Park in the winter, where seasonal wetlands support the migration of diverse waterfowl including Ruddy Ducks (Oxyura jamaicensis) and Northern Shovelers (Spatula clypeata). In summer months, avian abundance decreases when these seasonal ponds dry up. This project aims to understand how the surface water extend changes seasonally at Shollenberger Park.
+Wetlands are hydrologically and ecologically important habitats, supporting a diverse array of plants and wildlife as well as providing ecosystem services such as flood control and improving water quality. I regularly go birding in Shollenberger Park in the winter, where seasonal wetlands support the migration of diverse waterfowl including Ruddy Ducks (*Oxyura jamaicensis*) and Northern Shovelers (*Spatula clypeata*). In summer months, avian abundance decreases when these seasonal ponds dry up. This project aims to understand how the surface water extend changes seasonally at Shollenberger Park.
 
 ## Methods 
 
