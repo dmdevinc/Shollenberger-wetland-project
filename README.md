@@ -1,7 +1,9 @@
 # Wetland Hydrology - Work in Progress
 
-Wetlands are ecologically and hydrologically important habitats that support a diversity of wildlife. I regularly visit this wetland and wanted to understand the hydrology driving what I observe. This project aims to understand how the surface water extent changes seasonally in this tidally influenced wetland. 
+Wetlands are hydrologically and ecologically important habitats, supporting a diverse array of plants and wildlife as well as providing ecosystem services such as flood control and improving water quality. I regularly go birding in Shollenberger Park in the winter, where seasonal wetlands support the migration of diverse waterfowl including Ruddy Ducks (Oxyura jamaicensis) and Northern Shovelers (Spatula clypeata). In summer months, avian abundance decreases when these seasonal ponds dry up. This project aims to understand how the surface water extend changes seasonally at Shollenberger Park.
 
-Methods: 
-- Google Earth Engine Python API via geemap
-- Surface water mapping with Sentinel-2 with the Global Surface dataset from JRC (baseline to compare against)
+## Methods 
+
+Surface water extent at Shollenberger Park was analyzed using Google Earth Engine (GEE) via the Python API in Google Colab. Sentinel-2 Surface Reflectance imagery (COPERNICUS/S2_SR_HARMONIZED) was selected within a delineated study area boundary traced from Google Earth, and images were selected from the wet season (January–March 2023) and dry season (July–September 2023). Images were also filtered by cloud cover, with only images below 10% cloud pixel percentage selected and a median composite was generated for each season to reduce the remaining atmospheric noise.
+
+The Normalized Difference Water Index (NDWI) was calculated from the Green (B3) and NIR (B8) bands using the formula (Green − NIR) / (Green + NIR). NDWI values were classified according to established thresholds: values above 0.2 indicate open water surface, 0.0–0.2 indicate flooding or high soil moisture, −0.3–0.0 indicate non-aqueous surfaces, and below −0.3 indicate dry conditions. Pixel distributions were visualized as histograms to compare seasonal water extent within the study boundary. To characterize the seasonal transition, median composites were generated for each calendar month of 2023 and water area within the study boundary was calculated in hectares and plotted as a time series.
